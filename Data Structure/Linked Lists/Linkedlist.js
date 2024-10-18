@@ -18,6 +18,24 @@ class Linkedlist{
         current.next = node;
     }
 
+    remove(vlaue){
+        let current, previous, item = 0;
+        current = this.head;
+        previous = current;
+
+        while(item<index)
+        {
+            item++;
+            previous = current;
+            current = current.next;
+        }
+        previous.next = current.next;
+    }
+
 
 }
+
+let l = new Linkedlist();
+l.add(1);
+l.remove(10);
 
